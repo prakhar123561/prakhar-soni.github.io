@@ -19,6 +19,7 @@ module.exports = {
         poppins: 'Poppins, sans-serif',
         outfit: 'Outfit, sans-serif',
         },
+        
     },
   },
   plugins: [],

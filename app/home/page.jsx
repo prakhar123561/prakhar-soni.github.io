@@ -3,7 +3,12 @@ import Head from "next/head"
 import Script from "next/script"
 import Image from "next/image"
 import 'tailwindcss/tailwind.css'
+import Swipe from './swipe'
+import Swipe1 from './swipe1'
+import ScrollButton from './script'
+
 export default function Home(){
+  
   return(<>
     <Head>     
       <meta charSet="utf-8" />
@@ -23,22 +28,21 @@ export default function Home(){
       <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
-      />{" "}
+      />
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossOrigin="anonymous"
       />
-      <link rel="stylesheet" href="style.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
+    
       <link href="assets/plugins/fontawesome/css/all.css" rel="stylesheet" />
+      
 </Head>
 
-<div class="bg-[#e8f3ff]" data-preloader="light">
+
+<body className="bg-[#e8f3ff]" data-preloader="light">
+  
   {/* Header */}
   <div className="header header-lg transparent-dark nav-center px-2 relative">
     <div className=" flex justify-between items-center w-full py-8 px-8">
@@ -47,7 +51,7 @@ export default function Home(){
         <h5 className="uppercase">
           <a
             href="/index.html"
-            className="font-outfit font-semibold text-xl hover:text-black"
+            className="font-outfit font-[500] text-[20px] hover:text-black"
           >
             NUUR
           </a>
@@ -116,7 +120,7 @@ export default function Home(){
       <div className="flex justify-between items-center w-44">
         <div className="header-extra ms-4 ">
           <a
-            className="font-outfit font-normal bg-gradient-to-r from-[#007990] to-[#6CE5C0]  px-4 py-2.5 rounded-3xl shadow-2xl shadow-neutral-300 text-white"
+            className="font-outfit font-normal bg-gradient-to-r from-[#007990] to-[#6CE5C0]  px-4 py-[14px] rounded-3xl shadow-2xl shadow-neutral-300 text-white"
             href="https://1.envato.market/B0vGLJ"
             target="_blank"
           >
@@ -982,7 +986,7 @@ export default function Home(){
     </div>
     {/* end Portfolio */}
 
-    <>
+    <div>
   {/* Sliding Text */}
   <div className="swiper sliding-text w-full h-100">
     <div
@@ -993,30 +997,14 @@ export default function Home(){
           "-1px -1px 0 #000,  1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
       }}
     >
-      <div className="swiper-slide">
-        <h2 className="display-1 font-poppins font-semibold uppercase mb-0">
-          Exclusive Design
-        </h2>
-      </div>
-      <div className="swiper-slide">
-        <h2 className="display-1 font-poppins font-semibold uppercase mb-0">
-          100% Responsive
-        </h2>
-      </div>
-      <div className="swiper-slide">
-        <h2 className="display-1 font-poppins font-semibold uppercase mb-0">
-          Versatile Features
-        </h2>
-      </div>
-      <div className="swiper-slide">
-        <h2 className="display-1 font-poppins font-semibold uppercase mb-0">
-          WorldClass Quality
-        </h2>
-      </div>
+      
+      <Swipe1/>
+      
+      
     </div>
   </div>
   {/* end Sliding Text */}
-</>
+</div>
 
 
     {/* Elements */}
@@ -1245,159 +1233,7 @@ export default function Home(){
     <div className=" mt-10">
       <div className="swiper sliding-boxes w-full  h-100 pt-10">
         <div className="swiper-wrapper">
-          {/* Item 1 */}
-          <div className="swiper-slide min-w-min">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                Clean code, fast support and a beautiful and very customizable
-                theme quickly and easily. Beautiful! I recommend the purchase!
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">
-                mariangela_wp
-              </h4>
-              <span className="sm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 2 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                Great, great, great. It is really easy to work with. The code
-                you receive is actually made for you. It only has what you need,
-                nothing more..
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">altayevrim</h4>
-              <span className="sm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 3 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                I love everything about this template. Clean Design, Amazing
-                documentation and a bunch of features.
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">
-                rainer_arencibia
-              </h4>
-              <span className="sm-heading tsm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 4 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                It was difficult to choose just one main reason for my 5 star
-                rating as they are all applicable. The template is flexible,
-                clean, easy to modify, etc.
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">SFMagpie</h4>
-              <span className="sm-heading tsm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 5 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                This is an easy-to-use, easy-to-modify, versatile theme with
-                excellent customer support. And the price is right!
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">
-                cominginsecond
-              </h4>
-              <span className="sm-heading tsm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 6 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                I can already see this is a lovely theme, with a huge amount of
-                options which are all clearly categorized &amp; presented. Easy
-                to understand and edit to suit one's needs.
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">
-                hracaligari
-              </h4>
-              <span className="sm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* Item 7 */}
-          <div className="swiper-slide">
-            <div className="bg-gradient-to-r from-cyan-100 to-blue-100 flex-col p-4 p-md-5 rounded-xl">
-              <div className="mb-3">
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-                <i className="fa-solid fa-star" style={{ color: "#FFD43B" }} />
-              </div>
-              <p className="text-black-700">
-                Very sleek and pleasant design! Makes my website look very
-                professional. Easy to use elements. Support is very responsive
-                and helpful! Excellent support.
-              </p>
-              <h4 className="font-bold text-black-700 mt-4 mb-1">Leogazmic</h4>
-              <span className="sm-heading text-black-500 uppercase">
-                ThemeForest user
-              </span>
-            </div>
-          </div>
-          {/* end Item 6 */}
+          <Swipe />
         </div>
         {/* end swiper-wrapper */}
       </div>
@@ -1461,18 +1297,21 @@ export default function Home(){
   </main>
   
   {/* Scroll to Top */}
-  <div
-    className=" text-xl z-100 ml-auto w-8 h-8 bg-neutral-700 rounded-3xl flex justify-center items-center p-4 fixed bottom-5 left-0 right-5 cursor-pointer"
-    name="top"
-    onclick='window.scrollTo({top: 0, behavior: "smooth"});'
-  >
-    <i className="fa-solid fa-arrow-up" style={{ color: "#fff" }} />
+  <ScrollButton/>
+{/* end Scroll to Top */}
+
+  {/* Background Vertical lines */}
+  <div className="bg-lines-3 bg-lines-animated">
+    <div className="line-1" ></div>
+    <div className="line-2" ></div>
+    <div className="line-3" ></div>
   </div>
+  {/* end Background Vertical lines */}
+
   {/* JavaScripts */}
-  <Script type="text/javascript" src="script.js"></Script>
 		<Script src="https://kit.fontawesome.com/9eae89ba84.js" crossorigin="anonymous"></Script>
 		<Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></Script>
-  </div>
+  </body>
 </>
 
     )
