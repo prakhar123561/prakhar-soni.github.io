@@ -156,7 +156,7 @@ export default function Home(){
                 <i className="fa-solid fa-star" style={{color: "#FFD43B"}} />
               </div>
               <div>
-                <p>We're trusted by 4,000+ people</p>
+                <p>We&apos;re trusted by 4,000+ people</p>
               </div>
             </div>
             <h1 className="display-2 font-semibold font-poppins mb-0 ">
@@ -178,10 +178,7 @@ export default function Home(){
           <div className="col-12 col-lg-6">
             <div className="bg-[#dedef3] flex justify-center items-center p-4 p-md-5 rounded-xl md:flex-row flex-col">
               <div className="mb-2 mb-md-0 me-md-4 me-lg-5 icon-4xl mr-auto">
-                <i
-                  className="fa-brands fa-bootstrap fa-2xl"
-                  style={{ color: "#db3dd6" }}
-                />
+                <i className="fa-brands fa-bootstrap fa-2xl" style={{ color: "#db3dd6" }}/>
               </div>
               <div>
                 <h4 className="text-black font-medium text-2xl">
@@ -197,10 +194,7 @@ export default function Home(){
           <div className="col-12 col-lg-6">
             <div className="bg-[#d4e9fa] flex justify-center items-center p-4 p-md-5 rounded-xl md:flex-row flex-col">
               <div className="mb-2 mb-md-0 me-md-4 me-lg-5 icon-4xl mr-auto">
-                <i
-                  className="fa-regular fa-gem fa-2xl"
-                  style={{ color: "#74C0FC" }}
-                />
+                <i className="fa-regular fa-gem fa-2xl" style={{ color: "#74C0FC" }}/>
               </div>
               <div>
                 <h4 className="text-black font-medium text-2xl">
@@ -216,17 +210,14 @@ export default function Home(){
           <div className="col-12 col-lg-6">
             <div className="bg-[#d4e9fa] flex justify-center items-center p-4 p-md-5 rounded-xl md:flex-row flex-col">
               <div className="mb-2 mb-md-0 me-md-4 me-lg-5 icon-4xl mr-auto">
-                <i
-                  className="fa-solid fa-arrows-spin fa-2xl"
-                  style={{ color: "#74C0FC" }}
-                />
+                <i className="fa-solid fa-arrows-spin fa-2xl" style={{ color: "#74C0FC" }}/>
               </div>
               <div>
                 <h4 className="text-black font-medium text-2xl">
                   Lifetime Free Update
                 </h4>
                 <p className="text-black-700">
-                  We'll be continuously updating the template by adding new
+                  We&apos;ll be continuously updating the template by adding new
                   demos, features, and elements.
                 </p>
               </div>
@@ -235,10 +226,7 @@ export default function Home(){
           <div className="col-12 col-lg-6">
             <div className="bg-[#dedef3] flex justify-center items-center p-4 p-md-5 rounded-xl md:flex-row flex-col">
               <div className="mb-2 mb-md-0 me-md-4 me-lg-5 icon-4xl mr-auto">
-                <i
-                  className="fa-solid fa-layer-group fa-2xl"
-                  style={{ color: "#db3dd6" }}
-                />
+                <i className="fa-solid fa-layer-group fa-2xl" style={{ color: "#db3dd6" }}/>
               </div>
               <div>
                 <h4 className="text-black font-medium text-2xl">
