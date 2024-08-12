@@ -180,7 +180,7 @@ export default function App() {
             <p className="text-black-700">
               I can already see this is a lovely theme, with a huge amount of
               options which are all clearly categorized &amp; presented. Easy
-              to understand and edit to suit one's needs.
+              to understand and edit to suit one&apos;s needs.
             </p>
             <h4 className="font-bold text-black-700 mt-4 mb-1">
               hracaligari
